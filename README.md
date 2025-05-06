@@ -1,15 +1,19 @@
-# Welcome to NeighBorrow 🫂
+# NeighBorrow 🫂 — Share More. Save More. Your Community Awaits!
 
-## Project info ℹ️
+## ℹ️ Overview
 
-NeighBorrow is a web-based platform designed to foster community engagement by enabling neighbors to share resources, skills, and services in a secure and user friendly manner. The platform will use AI to enhance user experience through personalized recommendations, trust-building, and efficient matching.
+NeighBorrow is a peer-to-peer web platform enabling neighbors to share items, exchange skills, and organize local events—powered by AI for intelligent recommendations, fraud detection, and seamless community engagement.
 
-## Key Features 🤔
-- **Item Sharing**: Users can list items to lend or borrow (e.g., tools, equipment, bikes) and search for items by category, location, and availability.
-- **Skill Exchange**: Users can offer or request services (e.g., tutoring, pet-sitting, gardening) and exchange skills or items.
-- **Local Events and Alerts**: A bulletin board for posting community events, alerts, and announcements.
-- **Trust and Reviews**: User profiles with ratings and reviews, along with AI-powered fraud detection and trust scoring.
-- **AI-Powered Features**: Personalized recommendations, dynamic pricing suggestions, and predictive analytics.
+Built with a modern stack (**React + Tailwind + Supabase**), NeighBorrow promotes sustainability, affordability, and community trust.
+
+## 🌟 Key Features
+
+- **🔄 Item Sharing**: Post and browse tools, electronics, furniture, and more. Personalized AI-driven suggestions included.
+- **🧠 Skill Exchange**: Offer/request services like tutoring, pet-sitting, or gardening. AI matching for complementary skills.
+- **📅 Events Bulletin**: Discover and create local events, auto-sorted by distance.
+- **💬 Messaging & Trust**: Built-in chat, post-exchange reviews, and AI-powered trust scoring.
+- **📍 Location Handling**: Autofill/manual city/area location used across listings and events.
+
 
 ## Target Audience 👥
 - **Primary Users**: Residents of local communities in urban and suburban areas in the USA.
