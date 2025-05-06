@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { supabase } from '../supabase/supabaseClient';
+import { createUserProfile } from '../supabase/supabaseService';
 
 export default function SignupForm() {
   const [email, setEmail] = useState('');
@@ -10,13 +11,30 @@ export default function SignupForm() {
 
   const handleSignup = async (e) => {
     e.preventDefault();
-    const { data, error } = await supabase.auth.signUp({
+    const { data: authData, error: authError } = await supabase.auth.signUp({
       email,
       password,
-      options: { data: { name, location } }
     });
-    if (error) setError(error.message);
-    else window.location.reload(); // or redirect
+
+    if (authError) {
+      setError(authError.message);
+      return;
+    }
+
+    // Create user profile in the Users table
+    const { error: profileError } = await createUserProfile({
+      id: authData.user.id,
+      email,
+      name,
+      location
+    });
+
+    if (profileError) {
+      setError(profileError.message);
+      return;
+    }
+
+    window.location.reload();
   };
 
   return (
