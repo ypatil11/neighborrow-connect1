@@ -67,6 +67,7 @@ npm run dev
 - shadcn-ui
 - Tailwind 
 - AI Tools used: Lovable.ai, Deepseek ai
+- SuperBase
 
 #### We have used Lovable to create most pages, and to fine-tune the application's UI, we have utilized Deepseek AI along with human expertise. 
 #### This project is in its initial stage, and we are actively working on it.
